@@ -1,0 +1,12 @@
+namespace Oxide.Plugins
+{
+    [Info("Plugin", "Plugin", "1.0.0")]
+    public class Plugin : RustPlugin
+    {
+        private void OnServerInitialized()
+        {
+            Server.Command("entry.interferenceradius 100");
+            Server.Command("sentry.maxinterference 100");
+        }
+    }
+}
